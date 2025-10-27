@@ -1,0 +1,49 @@
+body {
+    background-color: #CDFFF9;
+}
+
+.clock {
+    height: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.hand {
+    height: 2rem;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform-origin: 0 50%;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.hour {
+    width: 10rem;
+    background-color: #c5d9e2;
+}
+
+.minute {
+    width: 15rem;
+    background-color: #a5ffd6;
+}
+
+.second {
+    width: 18rem;
+    background-color: #817f75;
+}
+
+.tick {
+    height: 0.7rem;
+    width: 5rem;
+    background-color: #B3B5BB;
+    position: absolute;
+    transform-origin: 0 50%;
+    left: 50%;
+    right: 50%;
+}
+
+.thick {
+    height: 1rem;
+}

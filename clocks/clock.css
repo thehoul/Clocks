@@ -1,0 +1,60 @@
+:root {
+    --clock-size: 3.5rem;
+    --hand-thickness: 9%;
+    --background: black;
+    --clock-bg: #242424;
+    --highlights: yellowgreen;
+    --number-gap: 20px;
+    --digit-gap: 7px;
+    --clocks-gap: 3px;
+}
+
+body {
+    background-color: var(--background);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+
+.time {
+    display: flex;
+    flex-direction: row;
+    gap: var(--number-gap);
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    gap: var(--digit-gap);
+}
+
+.clock {
+    position: relative;
+    background-color: var(--clock-bg);
+    border-radius: 50%;
+    border: solid;
+    border-color: var(--highlights);
+    width: var(--clock-size);
+    height: var(--clock-size);
+}
+
+.digit {
+    position: relative;
+    display: grid;
+    width: fit-content;
+    gap: var(--clocks-gap);
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate:  calc(-1* var(--hand-thickness)) -50%;
+    transform-origin: var(--hand-thickness) center;
+    background-color: var(--highlights);
+    height: var(--hand-thickness);
+    width: calc(50% + var(--hand-thickness));
+}
+

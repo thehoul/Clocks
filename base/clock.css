@@ -1,0 +1,47 @@
+:root {
+    --clock-size: 40rem;
+    --clock-bg: black;
+    --background: white;
+    --highlights-color: green;
+}
+
+body {    
+    background-color: var(--background);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+
+.clock {
+    height: var(--clock-size);
+    width: var(--clock-size);
+    border-radius: 50%;
+    background-color: var(--clock-bg);
+    position: relative;
+}
+
+.hand {
+    background-color: var(--highlights-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: 0 -50%;
+    transform-origin: 0 50%;
+}
+
+.hours {
+    width: 9rem; 
+    height: 3rem;
+}
+
+.minutes {
+    width: 12rem;
+    height: 2rem;
+}
+
+.seconds {
+    width: 20rem;
+    height: 1rem;
+}

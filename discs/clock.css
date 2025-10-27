@@ -1,0 +1,44 @@
+body {
+    background-color: #CDFFF9;
+}
+
+.clock {
+    height: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.hand {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    transform-origin: center;
+    border-radius: 50% 0 50% 50%;
+}
+
+.hour {
+    height: 40rem;
+    width: 40rem;
+    background-color: #c5d9e2;
+}
+
+.minute {
+    height: 25rem;
+    width: 25rem;
+    background-color: coral;
+}
+
+.second {
+    height: 10rem;
+    width: 10rem;
+    background-color: blanchedalmond;
+}
+
+.text {
+    font-size: large;
+    text-align: center;
+}
